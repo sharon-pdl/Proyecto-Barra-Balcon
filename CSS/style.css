@@ -1,0 +1,230 @@
+/* El asterisco es el selector universal
+sirve para aplicar propiedades a todo el doc*/
+
+*{
+    list-style: none; /* este none saca las viñetas de las listas*/
+    padding: 0%;
+}
+
+header{ /*selector de una etiqueta*/
+    position: relative; /*entre llaves
+    se pone la dupla de propiedad:valor*/
+    width: 1000px; 
+    height: 200px;
+    margin: 20px auto;
+    background: rgb(2, 149, 217);    
+}
+
+#logo{ /*selector de un id*/
+    position: absolute;
+    width: 200px; /*ancho*/
+    height: 100px; /*alto*/
+    top: 40px;/*bordes*/
+    left: 40px;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 10%;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;/*propiedad para alinerar un texto horizontalmente al centro*/
+    line-height: 100px; /* le ponemos el mismo alto que tiene
+    el logotipo,y con esto centramos verticalmente*/
+    font-size: 28px;
+}
+/*
+asi como usamos un # para los id,
+para iniciar los atributos de una clase
+usamos un punto
+todo lo que pertenezca a la clase botones, 
+va a tener las siguientes propiedades
+
+*/
+
+.botones{ /*selector de una clase*/
+    position: absolute; /* a los elementos internos siempre le damos la condicion de absolute*/
+    width: 50px;
+    height: 50px;
+    background: gray;
+    top: 60px;
+    border-radius: 100%;
+}
+
+/* tengo que darle una ubicacion a cada elemento dentro de la 
+alineacion al borde derecho */
+
+#redes1{
+    right: 20px;
+}
+
+#redes2{
+    right: 80px;
+}
+
+#redes3{
+    right: 140px;
+}
+
+
+nav{
+    position: relative;
+    width: 1000px; 
+    height: 50px;
+    margin: 20px auto;
+    background: rgb(2, 149, 217);
+}
+
+nav ul li{ /* cada li que este adentro de una ul que este dentro de un nav*/
+    
+    float: left; /* con esto ubicamos la lista en forma horizontal, 
+    y no vertical, y ordena de izq a derecha*/
+    width: 194px;
+    height: 50px; /* tiene que ser igual que el de nav*/
+    background: rgb(79, 78, 78);
+    margin: 0 3px 0 3px;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+/*aca usamos un pseudo selector para pasar por encima
+y que cambie de color con el :hover*/
+
+nav ul a li:hover{
+    background: rgb(10, 167, 210); /* color de fondo*/
+    color: rgb(0, 52, 116); /*color de la letra*/
+}
+
+nav ul a li:active{ /* Propiedad que cambia de color
+    el fondo cuando le hago click */
+    background:rgb(2, 149, 217); /* color de fondo*/
+    color: rgb(69, 95, 114); /*color de la letra*/
+}
+
+#top{
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    background:  gray;
+    margin: 20px auto;
+}
+
+#top ul li{
+    float: left;
+    width: 327px;
+    height: 300px;
+    background: rgb(1, 106, 120);
+    margin:0 3px 0 3px;
+}
+
+/* con esto cambiamos la proporcion del tamaño
+de la imagen, en base a la caja que lo contiene*/
+
+#top ul li img{
+    position:relative;
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 300px;
+    text-align: center;/*propiedad para alinerar un texto horizontalmente al centro*/ 
+    border-radius: 5%;
+}
+#top ul li h1{
+    float:inline-end;
+    margin-right: 15px;
+    position: relative;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+section{
+    position: relative; /* position en los 
+    elementos principales toma el valor de relativo*/
+    width: 1000px;
+    height: 500px;
+    background: rgb(2, 149, 217);
+    margin: 20px auto;
+}
+
+/* con esto hacemos las barras de los costados*/
+aside{
+   position: absolute; /* position en los 
+   elementos que estan adentro toma el valor de absoluto*/
+   width: 250px;
+   height: 500px;
+   background:gray
+}
+
+#izquierdo{
+    left: 0px;
+}
+
+/* con esto hacemos la barra del medio*/
+article{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background:  rgb(2, 149, 217);
+    left: 250px;
+}
+
+article h1{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article p{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article img{
+    width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left; /* CON ESTO hago que el texto quede flotante
+    respecto a la imagen*/
+
+}
+#derecho{
+    right: 0px;
+}
+
+aside#derecho h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+aside#derecho input[type="text"]{ /*aca le aclaro a 
+    cual de todos los input tiene que ir*/
+    padding: 10px;
+    margin: 10px;
+}
+
+aside#derecho input[type="password"]{ /*aca le aclaro a 
+    cual de todos los input tiene que ir*/
+    padding: 10px;
+    margin: 10px;
+}
+
+aside#derecho input[type="button"]{ /*aca le aclaro a 
+    cual de todos los input tiene que ir*/
+    padding: 10px;
+    margin: 10px;
+}
+
+/* pie de pagina*/ 
+footer{
+    position: relative;
+    width: 1000px;
+    height: 170px;
+    margin: 20px auto;
+    background: rgb(79, 78, 78);
+}

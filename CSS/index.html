@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+   <header> <!-- ETIQUETA SEMANTICA-->
+    
+    <div id="logo">
+        BARRA BALCON
+
+    </div>
+
+    <div id="redes1" class="botones"></div>
+    <div id="redes2" class="botones"></div>
+    <div id="redes3" class="botones"></div>
+
+   
+</header>
+    
+   <nav> <!-- ETIQUETA SEMANTICA-->
+        <ul>
+            <!-- Con la etiqueta <a> transformamos los elementos en hipervinculos-->
+            <a href=""> <li> Inicio </li> </a>
+            <a href=""> <li> Nosotros </li> </a>
+            <a href=""> <li>Noticias </li> </a>
+            <a href="">  <li> Secciones </li> </a>
+            <a href="">  <li>Contacto </li> </a>
+
+        </ul>
+   </nav> <!-- ETIQUETA SEMANTICA-->
+
+   <div id="top">
+
+        <ul>
+            <li> 
+                <img src="barra1.jpg" alt="">
+                <h1> BARRAS Y BALCONES </h1>
+            
+            </li>
+
+            <li> 
+                <img src="otros.jpeg" alt="">
+                <h1> OTROS TRABAJOS </h1>
+
+            </li>
+
+            <li> 
+                <img src="casa.jpeg" alt="">
+                <h1> SI, TAMBIEN SOY PINTOR </h1>
+            
+            </li>
+        </ul>
+   </div>
+   
+<!-- Las etiquetas no tienen significancia en si mismas,
+pero tienen dos propositos:
+1- Ordenar el codigo
+2- Sirven para mejorar la indexacion en los motores de busqueda-->
+
+<section> <!-- -->
+    <aside id="izquierdo">
+
+    </aside>
+
+    <article>
+        <h1> ¿Cuáles son los materiales que no se pueden reciclar? </h1>
+        <img src="nosepuedereciclar.jpeg" alt="">
+        <p> Servilletas de papel usadas, caja de pizza manchada,
+             tarrina de helado de cartón... 
+            Los papeles o cajas de cartón manchadas, 
+            con grasa de los alimentos por ejemplo, 
+            no se pueden echar al contenedor azul 
+            porque perjudicaría el proceso de reciclaje 
+            del resto de papel y cartón limpio.
+
+        </p>
+
+    </article>
+
+    <aside id="derecho">
+        <h1> Iniciar sesion </h1>
+        <form>
+            <!--placeholder: es la pista de lo que 
+            hay que ingresar en el input -->
+            <input type="text" name="" id="" placeholder="Usuario"> 
+            <input type="password" name="" id="" placeholder="Contraseña">
+            <input type="button" value="Entrar">
+        </form>
+
+    </aside>
+
+</section>
+
+<footer>
+
+</footer>
+
+
+</body>
+
+</html>
